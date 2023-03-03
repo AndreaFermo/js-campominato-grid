@@ -41,14 +41,14 @@ footer .container {
 }
 
 main .container {
-    max-width: 620px;
+    width: 620px;
     height: 600px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.headerLeft  {
+.headerLeft, .headerRignt {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -79,6 +79,17 @@ main .container {
     border: 1px solid gray;
     border-radius: 5px;
 }
+
+.container.grigliaPiccola {
+    width: 440px;
+    height: 420px;
+}
+
+.container.grigliaMedia {
+    width: 560px;
+    height: 540px;
+}
+
 
 
 
