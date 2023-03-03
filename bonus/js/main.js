@@ -8,7 +8,7 @@ giocaDom.addEventListener('click', function() {
    
     let difficoltaDom = document.querySelector('#difficolta');
     let valoredifficoltaDom = difficoltaDom.value;
-    griagliaDom.innerHTML = ``
+    griagliaDom.innerHTML = ``;
     
 
     let numeroquadrati = scegliDifficolta (valoredifficoltaDom);
