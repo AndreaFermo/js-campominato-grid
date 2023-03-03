@@ -60,6 +60,10 @@ main .container {
     height: 60px;
 }
 
+.quadrato.cliccato {
+    background-color: red;
+}
+
 
 
 
