@@ -1,4 +1,7 @@
 const griagliaDom = document.querySelector('#griglia');
+const giocaDom = document.querySelector('#gioca');
+
+giocaDom.addEventListener('click', function() {
 
 for (let i = 0; i < 100; i++) {
     const numeroInterno = i + 1;
@@ -6,7 +9,8 @@ for (let i = 0; i < 100; i++) {
 
 
     currentQuadrato.addEventListener('click', function() {
-        this.classList.toggle('cliccato')
+        this.classList.toggle('cliccato');
+        console.log(numeroInterno);
 
     })
 
@@ -18,23 +22,12 @@ for (let i = 0; i < 100; i++) {
 
 }
 
-function createQuadrato(numero) {
+})
+
+function createQuadrato() {
     const currentElement = document.createElement('div');
     currentElement.classList.add('quadrato');
 
-    if (pariDispari(numero) == 'pari') {
-        currentElement.classList.add('pari')
-    }   else {
-        currentElement.classList.add('dispari')
-    }
 
     return currentElement
-}
-
-function pariDispari(numero) {
-    if (numero % 2 == 0) {
-        return 'pari';
-    } else {
-        return 'dispari';
-    }
 }

@@ -64,15 +64,7 @@ main .container {
 }
 
 .quadrato.cliccato {
-    background-color: red;
-}
-
-.cliccato.pari {
-    background-color: blue;
-}
-
-.cliccato.dispari {
-    background-color: purple;
+    background-color: rgb(0, 123, 255);
 }
 
 
