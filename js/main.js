@@ -1,8 +1,10 @@
 const griagliaDom = document.querySelector('#griglia');
 const giocaDom = document.querySelector('#gioca');
 
-giocaDom.addEventListener('click', function() {
-
+giocaDom.addEventListener('click', function() { 
+    
+    griagliaDom.innerHTML = ``
+    
 for (let i = 0; i < 100; i++) {
     const numeroInterno = i + 1;
     const currentQuadrato = createQuadrato(numeroInterno);
@@ -18,7 +20,6 @@ for (let i = 0; i < 100; i++) {
 
     currentQuadrato.innerHTML = `${numeroInterno}`;
 
-   
 
 }
 
