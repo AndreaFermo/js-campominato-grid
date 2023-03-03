@@ -58,6 +58,9 @@ main .container {
     border: 1px solid black;
     width: 58px;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quadrato.cliccato {

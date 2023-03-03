@@ -10,11 +10,12 @@ for (let i = 0; i < 100; i++) {
 
     griagliaDom.append(currentQuadrato);
 
+    currentQuadrato.innerHTML = `${i + 1}`
+
 }
 
 function createQuadrato() {
     const currentElement = document.createElement('div');
     currentElement.classList.add('quadrato');
     return currentElement
-
 }
